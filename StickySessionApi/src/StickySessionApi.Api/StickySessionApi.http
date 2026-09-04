@@ -1,0 +1,25 @@
+@StickySessionApi_HostAddress = http://localhost:5001
+
+GET {{StickySessionApi_HostAddress}}/users
+Accept: application/json
+
+###
+
+POST {{StickySessionApi_HostAddress}}/users
+Content-Type: application/json
+
+{
+  "username": "carol"
+}
+
+###
+
+POST {{StickySessionApi_HostAddress}}/messages
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "message": "hello from http file"
+}
+
+###

@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/StickySessionApi.Api/StickySessionApi.Api.csproj" />
+    <Project Path="src/StickySessionApi.Application/StickySessionApi.Application.csproj" />
+    <Project Path="src/StickySessionApi.Domain/StickySessionApi.Domain.csproj" />
+    <Project Path="src/StickySessionApi.Infrastructure/StickySessionApi.Infrastructure.csproj" />
+  </Folder>
+</Solution>
