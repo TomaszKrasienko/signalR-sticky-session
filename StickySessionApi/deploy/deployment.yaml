@@ -16,7 +16,11 @@ spec:
     spec:
       containers:
         - name: stickysessionapi
-          image: tomaszkrasienko/sticky_session_api:1.0
+          image: sticky_session_api:1.0
+          imagePullPolicy: Never
+          envFrom:
+            - configMapRef:
+                name: stickysessionapi-config
           ports:
             - containerPort: 8080
           readinessProbe:
